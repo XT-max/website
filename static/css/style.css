@@ -1,0 +1,219 @@
+header{
+	background: #1a1a1a;
+    border-radius: 15px; /* Уголки */
+    height: 90px;
+
+}
+.link{
+    text-decoration: none;
+    font-family:fantasy;
+    color: white;
+    font-size: 30px;
+}
+.link2{
+    text-decoration: none;
+    font-family:fantasy;
+    color: black;
+    font-size: 30px;
+
+}
+.menu{
+    list-style: none;
+	display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 80px;
+    max-width: 100%;
+
+}
+.fon1 {
+    background: no-repeat url('/static/img/fon.jpg'); /* Параметры фона */
+     position: relative; background-position: bottom center; background-size: cover;
+   }
+
+.fon2 {background: no-repeat url('/static/img/fon2.jpg');
+    height: auto; position: relative; background-position: bottom center; background-size: cover;
+    }
+.fon3 {
+    background: no-repeat url('/static/img/fon3.jpg'); /* Параметры фона */
+    height: 890px; position: relative; background-position: bottom center; background-size: cover;
+   }
+.fon4 {
+    background: no-repeat url('/static/img/fon4.jpg'); /* Параметры фона */
+    height: 890px; position: relative; background-position: bottom center; background-size: cover;
+   }
+.oglav{
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #1A1A1A;
+    margin: 0 0 0px;
+    padding: 0;
+    text-align: center;
+    top: 10px;
+}
+.hist_age{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+    color: #1A1A1A;
+    padding: 13px 105px 18px 20px;
+    position: relative;
+    cursor: pointer;
+}
+.hist{
+    font-size: 25px;
+    color: #1A1A1A;
+    margin-left: 3%;
+    font-family: Comic Sans MS; /* Гарнитура шрифта */
+   }
+.hr-circle {
+	margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-width: 0 0 5px;
+	border-style: solid;
+	border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1" width="8" height="4"><circle fill="orange" cx="1" cy="0.5" r="0.5"></circle></svg>') 0 0 100% repeat;
+	background-position: 50%;
+	box-sizing: border-box;
+	color: orange;
+}
+.social {display: inline-block;}
+.social a {
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 10px 10px 10px;
+	text-align: center;
+	color:
+#fff;
+	border: 5px solid
+#ccc;
+	border-radius: 24px;
+	box-shadow: 5px 2px 4px
+rgba(0,0,0,0.15);
+}
+.social a:hover {
+	border-color:
+#888;
+	opacity: .8;
+}
+.social svg {
+	margin-top: 7px;
+	width: 32px;
+	height: 32px;
+}
+.discord a {background:#7289da;
+}
+.github a {background:
+#191919}
+.steam a {background:
+#30445d}
+
+.container {
+    padding:20px;
+    position:relative;
+    width:700px;
+
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-box-shadow:1px 1px 5px #111;
+
+}
+
+.gallery {
+    width:610px;
+    margin:0 auto;
+}
+.gallery a {
+    display:inline-block;
+    height:150px;
+    position:relative;
+    width:200px;
+}
+.gallery a img {
+    cursor:pointer;
+    display:block;
+    height:100%;
+    left:0px;
+    position:absolute;
+    top:0px;
+    width:100%;
+    z-index:1;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -webkit-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -moz-transition-duration:0.5s;
+    -o-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -o-transition-duration:0.5s;
+    transition-property:width, height, top, bottom, left, right, z-index, border;
+    transition-duration:0.5s;
+}
+.gallery a:focus img {
+    border:15px solid #fff;
+    cursor:default;
+    height:500%;
+    position:absolute;
+    width:500%;
+    z-index:25;
+
+    box-shadow:1px 1px 5px #888;
+    -moz-box-shadow:1px 1px 5px #888;
+    -webkit-box-shadow:1px 1px 5px #888;
+    -webkit-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -moz-transition-duration:0.5s;
+    -o-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -o-transition-duration:0.5s;
+    transition-property:width, height, top, bottom, left, right, z-index, border;
+    transition-duration:0.5s;
+}
+
+/* custom focus rules */
+.gallery a:focus:nth-child(3n+1) img {
+left:150px;
+}
+.gallery a:focus:nth-child(3n+2) img {
+    left:-50px;
+}
+.gallery a:focus:nth-child(3n+3) img {
+    left:-250px;
+}
+.gallery a:focus:nth-child(-n+3) img {
+    top:140px;
+}
+.gallery a:focus:nth-child(n+7) img {
+    top:-150px;
+}
+.gallery a:focus:nth-child(n+10) img {
+    top:-295px;
+}
+
+/* extra close layer */
+.gallery .close {
+    background:transparent;
+    cursor:pointer;
+    display:none;
+    height:352px;
+    left:170px;
+    position:absolute;
+    top:160px;
+    width:500px;
+    z-index:30;
+}
+.gallery a:focus ~ .close {
+    display:block;
+}

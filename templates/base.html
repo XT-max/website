@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="stylesheet" href="\static\css\style.css">
+
+<body>
+
+
+{% block content %}
+            {%- block mainmenu -%}
+<header>
+    <ul class="menu">
+    <a class="link" href="/">  Главная</a>
+    <a class="link" href="/history"> История</a>
+    {% for  m in menu -%}
+    <a class="link" href="{{url_for(m.url)}}"> {{m.title}}</a>
+
+
+        {% endfor -%}
+
+    {% endblock mainmenu -%}
+
+</ul>
+</header>
+
+{% with messages = get_flashed_messages() %}
+
+{% if messages %}
+
+<ul>
+
+    {% for message in messages  %}
+    <li style="color:white;">{{message}}     </li>
+    {% endfor %}
+
+</ul>
+
+{% endif %}
+{% endwith %}
+{% endblock %}
+
+</body>
+
+</html>
